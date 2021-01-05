@@ -1,0 +1,190 @@
+
+a{
+	color:black;
+}
+
+
+body{
+	font-family:Abel;
+	text-align:center;
+}
+
+.Title1{
+	position:absolute;
+	font-size:10vh;
+	width:100%;
+	
+}
+
+.Title{
+		position:absolute;
+	text-decoration:none;
+	font-size:3vw;
+	z-index: 100;
+	font-color: black;
+	border-style:solid;
+	left:0;
+	height:8vh;
+	width:25vw;
+	margin-top:2vh;
+	margin-left:5vw;
+	border-radius:1vw;
+	opacity:.5;
+	/*position:absolute;
+	text-decoration:none;
+	font-size:6vh;
+	z-index: 100:;
+	font-color:black;
+	border-style:solid;
+	left:0;
+	height:8vh;
+	width:25vw;
+	margin-top:2vh;
+	margin-left:5vw;
+	border-radius:50%;
+	opacity:.5;*/
+}
+
+.Title:hover{
+	opacity:1;
+}
+
+
+
+.Box{
+	background-color: transparent;
+	z-index:10;
+	position:absolute;
+	margin-top:12vh;
+	margin-left:15vw;
+	width:70vw;
+	height:70vh;
+	border-style:solid;
+	overflow:hidden;
+}
+
+.Box * {
+	pointer-events: none;
+}
+
+.Menu{
+	background-color: transparent;
+	z-index:10;
+	position:absolute;
+	margin-top:85vh;
+	margin-left:15vw;
+	width:70vw;
+	height:12vh;
+	border-style:solid;
+	overflow:hidden;
+}
+
+#VerticalMenu{
+	margin-top:12vh;
+	margin-left:87vw;
+	width:12vh;
+	height:85vh;
+	font-size:3vh;
+}
+
+.ColorButton{
+	position:absolute;
+	width:2.5vw;
+	height:4vh;
+	border-width-top:1vh;
+	border-width-bottom:1vh;
+	border-width-left:1vw;
+	border-width-right:1vw;
+	background-color:red;
+	transition:.5s;
+}
+/*.ColorButton:Hover{
+	transition:.5s;
+	border-radius:50%;
+	}
+
+	.ColorButton:active{
+	transition:.5s;
+	border-radius:50%;
+	}*/
+
+#blue{
+	margin-left:1vw;
+	margin-top: 1.5vh;
+	background-color:blue;
+	border-radius:50%;
+}
+
+#red{
+	margin-left:3.75vw;
+	margin-top: 1.5vh;
+	background-color:red;
+}
+#green{
+	margin-left:6.5vw;
+	margin-top:1.5vh;
+	background-color:green;
+}
+#orange{
+	margin-left:1vw;
+	margin-top:6vh;
+	background-color:orange;
+}
+#purple{
+	margin-left:3.75vw;
+	margin-top:6vh;
+	background-color:purple;
+}
+#pink{
+	margin-left:6.5vw;
+	margin-top:6vh;
+	background-color:pink;
+}
+
+.slider{
+	float:right;
+	margin-right:2vw;
+	margin-top:1.75vh;
+	z-index: 100;
+}
+
+#SizeSlider{
+	width:30vw;
+}
+
+#VelocitySlider{
+	width:30vw;
+}
+
+
+/*.GravitySlider{
+	  display: inline-block;
+	  padding: 0;
+	height:30vw;
+	width:2vh;
+}*/
+
+#GravitySlider{
+	position:relative;
+	top:36vh;
+	right: 29vh;
+	width: 70vh;
+   	height: 2vh;
+  	border: 0
+   	-webkit-transform: rotate(270deg);
+   	-moz-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+
+.Ball{
+	/*start out display as none to avoid weird stutter frame when ball is spawned.*/
+	display:none;
+	z-index:1;
+	position:absolute;
+	height:10vh;
+	width:10vh;
+	border-radius: 50%;
+	background-color:red;
+	transition:smooth;
+}

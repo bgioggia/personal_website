@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <title>Bouncy Ball</title>
+
+  <link href="../Images/BG.png" rel="icon" >
+
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link href="../CSS/index.css" rel="stylesheet" type="text/css">
+  <link href="../CSS/bounce.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+
+    <div class="Title1">Bounce Ball</div>
+      <a href="index.html">
+    <div class="Title">
+      Brandon Gioggia
+    </div>
+  </a>
+
+	<div class="Box" id="box" onclick="addBall()"></div>
+	<div class="Menu" id="VerticalMenu">
+		Gravity:
+		<div class="gravitySlider">
+			<input type="range" min="0" max="10" value="5" id="GravitySlider">
+		</div>
+ </div>
+  <div class="Menu">
+  	<table>
+  		<tr>
+  	<div class="ColorButton" id="blue" onclick="changeColor('blue')"></div>
+  	<div class="ColorButton" id="red" onclick="changeColor('red')"></div>
+  	<div class="ColorButton" id="green" onclick="changeColor('green')"></div>
+
+  </tr>
+  <tr>
+  	<div class="ColorButton" id="orange" onclick="changeColor('orange')"></div>
+  	<div class="ColorButton" id="purple" onclick="changeColor('purple')"></div>
+  	<div class="ColorButton" id="pink" onclick="changeColor('pink')"></div>
+
+
+  </tr>
+
+ <div class="slider">
+  	  	New Ball Size: Smaller
+  <input type="range" min="10" max="150" value="85" id="SizeSlider"> Larger
+</div>
+  	<div class="slider">
+  		New Ball Horizontal Velocity: Left
+  <input type="range" min="-50" max="50" value="0" id="VelocitySlider"> Right
+</div>
+
+
+  	
+  </div>
+
+
+
+    <script src="../JS/bounce.js"> </script>
+
+
+</body>
+
+</html>
